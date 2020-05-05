@@ -20,7 +20,7 @@ p
 }
 #container
 {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
 }
 header
@@ -52,4 +52,24 @@ header
 {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+img
+{
+    max-width: 100%;
+}
+@media all and (min-width:320px) and (max-width:414px)
+{
+    #container
+    {
+        max-width: 414px;
+        margin : auto;
+    }
+    .flex-section
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-between;
+        margin : auto;
+    } 
 }
