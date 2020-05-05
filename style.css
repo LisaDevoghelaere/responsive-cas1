@@ -1,5 +1,9 @@
-@media screen and (min-width:415px)
+@media screen and (min-width:1140px)
 {
+    body
+    {
+        margin :0px;
+    }
     h2, p
     {
         text-align: center;
@@ -28,7 +32,7 @@
     header
     {
         width : 70%;
-        margin : auto;
+        margin : 3rem auto;
     }
     .flex-section
     {
@@ -38,6 +42,7 @@
         justify-content: space-between;
         max-width: 95%;
         margin : auto;
+        flex-wrap: wrap;
     }
     .flex-section>div
     {
@@ -62,6 +67,10 @@
 }
 @media screen and (min-width:320px) and (max-width:414px)
 {
+    body
+    {
+        margin :0px;
+    }
     #container
     {
         max-width: 414px;
@@ -74,7 +83,63 @@
         align-content: center;
         justify-content:center;
         margin : auto;
+        flex-wrap: wrap;
     } 
+    h2, p
+    {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+    }
+    h2
+    {
+        font-weight: 500;
+        font-size: 2.25rem;
+    }
+    .titre-cube
+    {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    p
+    {
+        font-weight: 400;
+        font-size: 1rem; 
+    }
+    header
+    {
+        width : 70%;
+        margin : auto;
+    }
+    
+    .flex-section>div
+    {
+        width : 270px;
+        height : 290px; 
+        box-shadow: 3px 3px 8px #b4b0b4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin : 1rem auto;
+    }
+    .flex-section>div>p
+    {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    img
+    {
+        max-width: 100%;
+    }
+   
+}
+@media screen and (min-width:415px) and (max-width:1140px)
+{
+    body
+    {
+        margin :0px;
+    }
     h2, p
     {
         text-align: center;
@@ -97,15 +162,23 @@
     }
     #container
     {
-        max-width: 1280px;
+        max-width: 834px;
         margin: auto;
     }
     header
     {
         width : 70%;
-        margin : auto;
+        margin : 3rem auto;
     }
-    
+    .flex-section
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 95%;
+        margin : 2rem auto;
+        flex-wrap: wrap;
+    }
     .flex-section>div
     {
         width : 270px;
@@ -116,6 +189,7 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        margin : 1rem;
     }
     .flex-section>div>p
     {
@@ -126,5 +200,4 @@
     {
         max-width: 100%;
     }
-   
 }
